@@ -39,19 +39,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/edit_text_bg"
-        android:ems="10"
-        android:enabled="false"
-        android:inputType="number"
-        android:text="  +91"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/phoneEditTextNumber"
-        app:layout_constraintStart_toStartOf="parent" />
+   <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_defaultNameCode="IND"
+
+            app:ccp_showFlag="true"
+            app:ccp_showNameCode="true" />
+
 
     <TextView
         android:id="@+id/textView2"
